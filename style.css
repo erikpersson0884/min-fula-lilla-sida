@@ -1,0 +1,342 @@
+@import url(style_login.css);
+
+
+body {
+	background: #b5bbc7 url("pictures/grey.png") 0 0 repeat-y;
+	background: -webkit-linear-gradient (bottom, #b5bbc7, #54575c); 
+	background: linear-gradient(to bottom, #b5bbc7 40%, #54575c 100%);
+
+	color:#000080;
+
+	letter-spacing: normal;
+    word-spacing:normal;
+    line-height: normal;
+   
+	font-family: verdana, arial, helvetica, Geneva;
+}
+
+.skip a:link, .skip a:visited{
+	color: #b5bbc7;
+
+	
+}
+
+.skip a:focus{
+	color: #000080;
+}
+
+
+.content	{
+	padding-left:1em;
+	
+}
+
+body:hover .content{
+	transition:all linear .3s;
+	padding-left:16em;
+}
+
+body:hover .content:hover{
+	transition:all linear .3s;
+	padding-left:1em;
+}
+
+h1  {
+	text-align:center;
+	font: bold italic 2.5em verdana ;
+	margin-top:2em;
+	
+	
+}
+
+ h1, h2, h3, h4{   
+	background: #f0ba37 ;
+	padding:0.2em;
+	border-bottom: solid 0.17em #000080;
+	margin-top: 2em;
+	
+
+}
+
+.content section p	{
+	width: 50em;
+	font-size: 1em;
+	
+}
+
+
+blockquote:before	{
+    content:open-quote;
+}
+
+blockquote:after	{
+    content:close-quote;
+}
+
+nav a:hover, a:focus	{
+	font-weight:bold;
+}
+
+a:link	{
+	text-decoration:none;
+}
+
+a:visited	{
+	color:#0000ee;
+	background:#000011;
+}
+
+
+.what-is-a-goose p, .what-is-a-goose blockquote{
+	display:inline;
+	margin: 0;
+}
+
+.goose-pics	{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.goose-pic	{
+	text-align:center;
+	font:bold arial;
+	
+	width:12.8em;
+	
+	margin:1em;
+
+}
+
+.goose-pic img	{
+	background:#fff;
+	
+	width:10em;
+	height: 10em;
+	
+	padding:0.4em;
+	
+	border: 1em solid #73210F;
+}
+
+
+.news	{
+background: #f0ba37;
+transition: transform .5s linear 0s;
+transform: rotate(2deg) scale(0.8, 0.8);
+transform-origin: left;
+box-shadow: 1em 1em 2em 1em rgba(0,0,0,0.7);
+
+width:50em;
+
+padding: 1em;
+
+border: solid .4em #000080;
+
+margin:5em;
+
+}
+
+
+
+.hacker	{
+	display:grid; 
+	grid-template-columns: 20em 25em;
+	grid-auto-rows: minmax(4em auto);
+	grid-gap: 10px
+
+}
+
+.hacker .hacker-news	{
+	width:20em;
+}
+
+.hacker-pic	{
+	width:25em;
+	height:17em;
+	
+	padding: .2em;
+	
+	border: #000000 solid .2em;
+	border-radius:0 2em;
+
+}
+
+.figcap-hacker	{
+	text-align:center;
+	font-style:italic;
+	
+	width:21em;
+	
+	margin: auto;
+}
+
+
+
+.left	{
+	background:repeating-linear-gradient(#b5bbc7 2em, #8c8c9c 5em);
+	
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	
+	position:fixed;
+	left:0;
+	top:0;
+	
+	width:14em;
+	height:100%;
+
+	padding:0.4em;
+	
+	border-right: #000080 1em solid;
+	
+	margin-left: -15em;
+}
+
+body:hover .left	{
+	transition:all linear .3s;
+
+	margin-left: -15em;
+}
+
+body:hover .left:hover, .left:focus	{
+	transition: all linear .3s;
+	
+	margin:0;
+}
+
+
+.goose-home	{
+	content: url(pictures/goose.png);
+
+	width:10em;
+	height:10em;
+	
+
+}
+
+.goose-home:hover	{
+	transition: all 1s linear 1s;
+	
+	content: url(pictures/home_goose.png);
+	
+	width:10em;
+	height:10em;
+}
+
+.side_nav	{
+	background: #f0ba37;
+	
+	width:13.5em;
+	
+	border:solid 0.2em #000080;
+}
+
+.left-heading	{
+	width:11.5em;
+}
+
+.left h3	{
+	text-align: center;
+}
+
+
+
+.left ul	{
+	padding-left:1.6em;
+}
+
+
+
+
+/* 		Bullshit zone (so that everything from HTML dog is included)		*/
+
+.bullshit	{
+	display: none;
+	
+	margin-top: 10em;
+	margin-left: 1em;
+	
+	background: url(pictures/disco_goose.png) no-repeat, url(pictures/smoking_goose.png) 0 50% no-repeat, url(pictures/knife_goose.png) 0 90% no-repeat;
+}
+
+.bullshit h1:first-child {
+    background:lime;
+	color:rgb(255,0,0)
+}
+
+.bullshit h1:first-letter, .bullshit:first-line  {
+	color:rgb(100%,0%,0%);
+}
+
+.bullshit h1 + p:before{
+    content: "POW!";
+    background:rgb(30%,90%,049%) ;
+    color: #f00;
+}
+
+
+
+#float{
+	background: #0fa;
+	
+	float:right;
+	
+	height: 1.5em;
+}
+
+
+.shadows	{
+	background:#000080;
+	color: #fff;
+	box-shadow: 1em 1em 2em 1em rgba(0,0,0,0.6);
+	text-shadow: .2em .2em .2em #f3f;
+	
+	width:10em;
+	height:10em;
+}
+
+.child-selector > li	{
+	border:solid .4em red;
+}
+
+.adjacent-selectors h5 + p	{
+	color: hsla(300, 70%, 50%, 0.8);
+}
+
+p.last{
+	background: #ff0000;
+}
+
+
+
+@media screen and (min-width: 1500px)	{
+
+    body {
+		background: #b5bbc7 url(pictures/grey.png) 0 0 repeat-y;
+		background: -webkit-linear-gradient (bottom, #b5bbc7, #54575c) fill; 
+		background: #54575c;
+	}
+	
+	.skip a:link, .skip a:visited	{
+		color: #54575c;
+	}
+	.skip a:focus	{
+		color: #000080;
+	}
+
+}
+
+
+
+@media print	{
+	
+    body	{
+		
+		color:#000;
+        font: normal light 1em arial, helvetica, times;
+
+			}
+	}
+
