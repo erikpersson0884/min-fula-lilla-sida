@@ -6,6 +6,8 @@
 
 The first webpage I ever created, as a project in my web development course in High school.
 
+You may check it out for yourself <a href="https://erikpersson0884.github.io/min-fula-lilla-sida/goose.html">HERE</a>!
+
 Special thanks to <a href="https://fourfinches.net/">Patrick Griffiths</a> and his page <a href="https://htmldog.com/">HTML Dog</a>, from which i learnt most things for this project
 
 
